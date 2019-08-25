@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .a {
+        width: 0;
+        height: 0;
+        /* background-color: aquamarine; */
+        border-top: 50px solid rgba(34, 45, 23, 0);
+        border-right: 50px solid rgb(68, 76, 184, 0);
+        border-left: 50px solid rgb(101, 141, 60, 0);
+        border-bottom: 50px solid #012d17;
+        transform: rotate(135deg);
+      }
+      .b {
+        width: 50px;
+        height: 50px;
+        background-color: #f00;
+      }
+      .c {
+        width: 0;
+        height: 0;
+        border-top: 50px solid rgba(34, 45, 23, 0);
+        border-right: 50px solid rgb(68, 76, 184, 0);
+        border-left: 50px solid rgb(101, 141, 60, 0);
+        border-bottom: 50px solid rgba(1, 45, 23, 1);
+        animation: aaa 5s infinite;
+        -webkit-animation: aaa 3s infinite;
+      }
+      div {
+        display: inline-block;
+      }
+      @keyframes aaa {
+        0% {
+          /* border-bottom: 50px; */
+          border-color: #f00;
+        }
+        25% {
+          /* border-bottom: 80px; */
+          border-color: #8f0;
+        }
+        50% {
+          /* border-bottom: 100px; */
+          border-color: #00f;
+        }
+        100% {
+          /* border-bottom: 50px; */
+          border-color: #0f0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="a"></div> -->
+    <!-- <div class="b"></div> -->
+    <div class="c"></div>
+  </body>
+</html>

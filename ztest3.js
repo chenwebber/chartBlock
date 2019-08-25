@@ -1,0 +1,1 @@
+{"css":"","js":"function removeWithoutCopy(arr, item) {\n\tfor (var i=0,len=arr.length;i<len;i++) {\n        if(i==len-1 && arr[i]!=item)\n            return arr\n        else if(arr[i] == item) {\n           arr.splice(i,1)\n           arguments.callee(arr,item)\n        }\n    }\n    return arr\n}","html":"","libs":[]}
